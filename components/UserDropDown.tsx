@@ -22,7 +22,7 @@ const UserDropDown = () => {
   const user = { name: "John Doe", email: "john.doe@example.com" };
   return (
     <DropdownMenu>
-      <DropdownMenuTrigger asChild>
+      <DropdownMenuTrigger asChild className="hover:bg-gray-600">
         <Button
           variant="ghost"
           className="flex items-centergap-3 text-gray-4 hover:text-yellow-500"
