@@ -194,7 +194,11 @@ export const searchStocks = cache(
           return item;
         })
         .slice(0, 15);
-
+      console.log(
+        `[SERVER] searchStocks called with query: "${query || ""}". Returning ${
+          mapped.length
+        } stocks.`
+      );
       return mapped;
     } catch (err) {
       console.error("Error in stock search:", err);
